@@ -12,7 +12,7 @@ const DonadorModal = () => {
   useEffect(() => {
     const obtenerDonadores = async () => {
       try {
-        const url = `${import.meta.env.VITE_URL_BACKEND}/api/donadores`;
+        const url = `${import.meta.env.VITE_URL_BACKEND}/donadores`;
         const respuesta = await fetch(url);
         const data = await respuesta.json();
         setDonadores(data);

@@ -8,7 +8,7 @@ const Donadores = () => {
   useEffect(() => {
     const obtenerDonadores = async () => {
       try {
-        const url = `${import.meta.env.VITE_URL_BACKEND}/api/donadores/ultimos`;
+        const url = `${import.meta.env.VITE_URL_BACKEND}/donadores/ultimos`;
         const respuesta = await fetch(url);
         const data = await respuesta.json();
         setDonadores(data);
